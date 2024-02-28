@@ -9,6 +9,9 @@ function App() {
   return (
     <Router>
       <Navbar />
+      ...Home
+      ...About
+      ...Contact
     </Router>
   );
 }
