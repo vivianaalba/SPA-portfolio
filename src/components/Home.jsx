@@ -9,13 +9,17 @@ export default function Home() {
     // Refer to your original portfolio
 
     return(
-        <div>
+        <div className='home'>
             <div />
             <h1 className="home--hello">HELLO</h1>
             <h2 className="home--name">My name is Viviana and I am</h2>
             <h3 className="home--name">a full stack developer.</h3>
             <h4 className="home--connect">LET'S CONNECT</h4>
             <div/>
+
+            <div className='pink--circle'>
+                <img className='pink--circle--img' src='/images/pink-circle.svg' alt=''/>
+            </div>
         </div> 
     )
 }

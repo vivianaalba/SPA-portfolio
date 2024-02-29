@@ -15,29 +15,28 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
-    /* flex-wrap: wrap; */
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0; 
+}
+
+.navbar--name {
+    font-size: 3rem;
+    justify-content: left;
 }
 
 .logo {
-    width: 3rem;
-    height: 3rem;
+    width: 5rem;
+    height: 5rem;
 }
 
-.navbar,
-.navbar > ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    margin: 0;
-    padding: 1vh;
-}
-
-.navbar > ul {
+.navbar--right ul {
     justify-content: space-around;
     list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0; 
 }
 
 .navbar a {
@@ -72,12 +71,15 @@ body {
 }
 
 /* Home Styling */
+
 .home--hello {
     color:#fff;
     font-size: 20vh;
     padding-left: 10vh;
     padding-bottom: 0;
     display: block;
+    top:0%;
+    z-index: 1;
 }
 
 .home--name {
@@ -86,7 +88,7 @@ body {
     padding-left: 10vh;
     padding-top: 0;
     display: block;
-    line-height: 3vh;
+    line-height: 5vh;
 }
 
 .home--connect {
@@ -94,4 +96,28 @@ body {
     font-size: 3vh;
     padding: 6vh;
     line-height: 10vh;
+}
+
+.pink--circle {
+    z-index: 2;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+}
+
+.pink--circle--img {
+    height: 17rem;
+    top: 0%;
+}
+
+.green--shape {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+}
+
+.green--shape--img {
+    height: 17rem;
+    top: 0%;
 }

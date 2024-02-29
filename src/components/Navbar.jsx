@@ -5,10 +5,12 @@ export default function Navbar() {
     return (
         <nav className='navbar'>
             <div className='navbar--logo'>
-                <img className="logo" src='/images/1.svg' alt = 'logo'/>
+                <img className="logo" src='/images/logo.svg' alt = 'logo'/>
             </div>
+
+            <h1 className='navbar--name'>Viviana Alba</h1>
+
             <div className='navbar--right'>
-                <h1>Viviana Alba</h1>
                 <div className="navbar--links">
                     <ul>
                         <li>
