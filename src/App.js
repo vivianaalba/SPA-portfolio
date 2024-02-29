@@ -20,8 +20,6 @@ function App() {
         <Route path="/Contact" element = {<Contact props="phone"/>} />
       </Routes>
 
-      <img className='green-shape-img' src='/images/green-shape.svg' alt='' />
-
     </Router>
   );
 }
