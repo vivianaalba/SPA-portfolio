@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import About from './components/About';
@@ -9,9 +9,17 @@ function App() {
   return (
     <Router>
       <Navbar />
-      ...Home
-      ...About
-      ...Contact
+
+      <hr />
+
+      <Routes>
+        {/* Components without props */}
+        <Route path="/Home" element = {<Home />} />
+        <Route path="/About" element = {<About />} />
+        {/* Components with props */}
+        <Route path="/Contact" element = {<Contact props="phone"/>} />
+      </Routes>
+
     </Router>
   );
 }

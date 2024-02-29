@@ -1,11 +1,11 @@
 export default function About() {
-    const Summary = () => {
+    function Summary() {
         return (
             <>
-    
+            Hello! Welcome to my summary! This is where I will add a little bit about me.
             </>
-    )
-        }
+        )
+    }
     
     return(
         <div>
