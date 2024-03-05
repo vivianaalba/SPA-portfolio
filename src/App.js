@@ -14,7 +14,7 @@ function App() {
 
       <Routes>
         {/* Components without props */}
-        <Route path="/Home" element = {<Home />} />
+        <Route path="/" element = {<Home />} />
         <Route path="/About" element = {<About />} />
         {/* Components with props */}
         <Route path="/Contact" element = {<Contact props="phone"/>} />

@@ -105,7 +105,7 @@ body {
 }
 
 .pink--circle {
-    z-index: 2;
+    z-index: -1;
     position: absolute;
     top: 27%;
     left: 50%;
@@ -117,7 +117,7 @@ body {
 }
 
 .green--shape {
-    z-index: 2;
+    z-index: -1;
     position: absolute;
     top: 60%;
     left: 70%;
@@ -128,7 +128,7 @@ body {
 }
 
 .hand {
-    z-index: 2;
+    z-index: -1;
     position: absolute;
     top: 60%;
     left: 33%;
@@ -139,7 +139,7 @@ body {
 }
 
 .line--arrow {
-    z-index: 2;
+    z-index: -1;
     position: absolute;
     top: 45%;
     left: 75%;
@@ -150,7 +150,7 @@ body {
 }
 
 .square {
-    z-index: 2;
+    z-index: -1;
     position: absolute;
     top: 25%;
     left: 2%;
@@ -161,7 +161,7 @@ body {
 }
 
 .button {
-    z-index: 2;
+    z-index: 1;
     position: absolute;
     top: 75%;
     left: 72%;
@@ -186,4 +186,92 @@ body {
 
 .button:hover {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.contact--linkedin {
+    max-height: 8rem;
+}
+
+.contact--card {
+    justify-content: center;
+    align-items: center;
+    width: 700px; 
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+
+
+.contact--pink--circle {
+    justify-content: center;
+    align-items: center;
+    width: 1000px; 
+    height: 450px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.contact--pink--circle--img {
+    height: 40rem;
+}
+
+.contact--green--shape {
+    z-index: -1;
+    position: absolute;
+    top: 32%;
+    left: 65%;
+}
+
+.contact--green--shape--img {
+    height: 43rem;
+}
+
+.contact--green {
+    z-index: -1;
+    position: absolute;
+    top: 30%;
+    left: 70%;
+}
+
+.contact--green--img {
+    height: 20rem;
+}
+
+.contact--pink {
+    z-index: -1;
+    position: absolute;
+    top: 25%;
+    left: 70%;
+}
+
+.contact--pink--img {
+    height: 20rem;
+}
+
+.contact--multiple {
+    z-index: -2;
+    position: absolute;
+    top: 70%;
+    left: 10%
+}
+
+.contact--multiple--img {
+    height: 16rem;
+}
+
+.contact--outline {
+    z-index: -1;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+}
+
+.contact--outline--img {
+    height: 10rem;
 }
