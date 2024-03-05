@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import About from './components/About';
 import Navbar from './components/Navbar';
+import Projects from './components/projects';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         {/* Components without props */}
         <Route path="/" element = {<Home />} />
         <Route path="/About" element = {<About />} />
+        <Route path="/projects" element = {<Projects />} />
         {/* Components with props */}
         <Route path="/Contact" element = {<Contact props="phone"/>} />
       </Routes>

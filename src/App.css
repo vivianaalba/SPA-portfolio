@@ -275,3 +275,30 @@ body {
 .contact--outline--img {
     height: 10rem;
 }
+
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.card--odd {
+    border: red 2px solid;
+    display: flex;
+}
+
+.card--even {
+    border: red 2px solid;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.project--description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
