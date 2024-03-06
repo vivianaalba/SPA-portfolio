@@ -86,6 +86,7 @@ body {
     display: block;
     top:0%;
     z-index: 1;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
 }
 
 .home--name {
@@ -95,6 +96,7 @@ body {
     padding-top: 0;
     display: block;
     line-height: 5vh;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
 }
 
 .home--connect {
@@ -102,6 +104,7 @@ body {
     font-size: 3vh;
     padding: 6vh;
     line-height: 10vh;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
 }
 
 .pink--circle {
@@ -184,74 +187,87 @@ body {
     padding: 10px 20px; 
 }
 
-.button:hover {
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+.projects--button:hover {
+    background-color: rgb(245, 182, 64);
+    color: #222;
 }
 
 .contact--linkedin {
-    max-height: 8rem;
+    max-height: 5rem;
 }
 
 .contact--card {
     justify-content: center;
     align-items: center;
-    width: 700px; 
-    height: 300px;
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 55%;
+    left: 47%;
     transform: translate(-50%, -50%);
     font-size: 2rem;
-}
-
-
-.contact--pink--circle {
-    justify-content: center;
-    align-items: center;
-    width: 1000px; 
-    height: 450px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
-
-.contact--pink--circle--img {
-    height: 40rem;
-}
-
-.contact--green--shape {
-    z-index: -1;
-    position: absolute;
-    top: 32%;
-    left: 65%;
-}
-
-.contact--green--shape--img {
-    height: 43rem;
-}
-
-.contact--green {
-    z-index: -1;
-    position: absolute;
-    top: 30%;
-    left: 70%;
-}
-
-.contact--green--img {
-    height: 20rem;
+    border: pink 10px solid;
+    border-radius: 50%;
+    width: 40rem;
+    height:40rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 30%;
+    background: #FAE98E;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
 }
 
 .contact--pink {
     z-index: -1;
     position: absolute;
-    top: 25%;
-    left: 70%;
+    top: 30%;
+    left: 65%;
 }
 
 .contact--pink--img {
     height: 20rem;
+}
+
+.contact--purple {
+    z-index: -1;
+    position: absolute;
+    top: 65%;
+    left: 85%;
+}
+
+.contact--dots--img {
+    height: 8rem;
+}
+
+.contact--dots {
+    z-index: -1;
+    position: absolute;
+    top: 20%;
+    left: 90%;
+}
+
+.contact--purple--img {
+    height: 13rem;
+}
+
+.contact--square {
+    z-index: -1;
+    position: absolute;
+    top: 90%;
+    left: 65%;
+}
+
+.contact--square--img {
+    height: 3rem;
+}
+
+.contact--square2 {
+    z-index: -1;
+    position: absolute;
+    top: 60%;
+    left: 0%;
+}
+
+.contact--square2--img {
+    height: 5rem;
 }
 
 .contact--multiple {
@@ -265,20 +281,34 @@ body {
     height: 16rem;
 }
 
-.contact--outline {
+.contact--pink--circle {
     z-index: -1;
     position: absolute;
     top: 20%;
     left: 0%;
 }
 
-.contact--outline--img {
-    height: 10rem;
+.contact--blue--img {
+    height: 13rem;
 }
+
+.contact--blue {
+    z-index: -1;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.contact--pink--circle--img {
+    height: 13rem;
+}
+
+/* Projects Styling */
 
 .projectContainer {
     display: flex;
     flex-direction: column;
+    padding: 5%;
 }
 
 .cardContainer {
@@ -287,12 +317,10 @@ body {
 }
 
 .card--odd {
-    border: red 2px solid;
     display: flex;
 }
 
 .card--even {
-    border: red 2px solid;
     display: flex;
     flex-direction: row-reverse;
 }
@@ -301,4 +329,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    color: black;
+}
+
+.project--links {
+    background-color: #ffcccc;
+    border: none;
+    border-radius: 20px;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+.project--links:hover {
+    background-color: #f0b31a;
+    color: #222;
 }

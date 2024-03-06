@@ -38,7 +38,9 @@ export default function Home() {
             </div>
 
             <div className='button'>
-                <button className='projects--button'>Explore My Work</button>
+                <a href= '/Projects'> 
+                    <button className='projects--button'>Explore My Work</button>
+                </a>
             </div>
         </div> 
     )
