@@ -1,3 +1,17 @@
+# About
+<br> This application is an extensive portoflio for a full stack web developer. It includes my projects, my contact information, and an about me section in which I describe my career switch, interests, and passion for technology.
+
+## Technologies
+<br> Tech: Javascript, HTML, CSS
+<br> Libraries: React
+<br> IDE: VS Code
+
+### Getting started
+<br> npm start
+
+#### Installation
+<br> npm install
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

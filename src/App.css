@@ -5,7 +5,7 @@ body {
     flex-direction: column;
     background-color: #FAE98E;
     font-family: 'poppins', sans-serif;
-    color: #fff;
+    color: black;
 }
 
 /* Navbar Styling */
@@ -41,7 +41,7 @@ body {
 
 .navbar a {
     text-decoration: none; /* removes link underline */
-    color: #fff; 
+    color: black;
     padding: 10px 20px; /* better spacing */
     font-weight: bolder ;
     font-size: 2rem;
@@ -63,7 +63,8 @@ body {
     flex-direction: column;
     justify-content: left;
     align-items: flex-end;
-    max-height: 30vh;
+    max-height: 5rem;
+    position: sticky;
 }
 
 .navbar--name {
@@ -96,7 +97,7 @@ body {
     padding-top: 0;
     display: block;
     line-height: 5vh;
-    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .home--connect {
@@ -144,7 +145,7 @@ body {
 .line--arrow {
     z-index: -1;
     position: absolute;
-    top: 45%;
+    top: 42%;
     left: 75%;
 }
 
@@ -154,7 +155,7 @@ body {
 
 .square {
     z-index: -1;
-    position: absolute;
+    position: fixed;
     top: 25%;
     left: 2%;
 }
@@ -166,7 +167,7 @@ body {
 .button {
     z-index: 1;
     position: absolute;
-    top: 75%;
+    top: 85%;
     left: 72%;
 }
 
@@ -347,7 +348,66 @@ body {
     font-weight: bold;
 }
 
+.project--video {
+    padding: 15px;
+}
+
 .project--links:hover {
     background-color: #f0b31a;
     color: #222;
 }
+
+/* About Me Styling */
+.about-me {
+    padding: 25%;
+    text-align: center;
+    padding-top: 0%;
+}
+
+.about-title {
+    font-size: 4rem;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    animation: typing 5s steps(40, end), blink-caret 1s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+  }
+
+.about--blue--img {
+    height: 13rem;
+}
+
+.about--blue {
+    z-index: -1;
+    position: absolute;
+    top: 30%;
+    left: 70%;
+}
+
+.about--dots--img {
+    height: 4rem;
+}
+
+.about--dots {
+    z-index: -1;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+
+.about--purple {
+    z-index: -1;
+    position: absolute;
+    top: 75%;
+    left: 80%;
+}
+  

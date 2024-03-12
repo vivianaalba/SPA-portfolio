@@ -9,8 +9,21 @@ function Projects() {
                 <div className="card--odd">
                     <img src='/images/pink-circle.svg' alt=''/>
                     <div className='project--description'>
-                        <h2>CRUD Application</h2>
-                        <p></p>
+                        <h2>Login Application</h2>
+                        <p>
+                        This application was designed to store invaluable user information within a secure MongoDB database, ensuring that all user and client data is protected from data leaks. 
+                        <br/> <br/>
+                        At its core, this application is a standard CRUD application. Users can effortlessly navigate through its interface to perform essential tasks such as reading, creating, updating, or deleting data. This application was designed to offer functionality and convenience.
+                        <br/> <br/>
+                        <b>Tech:</b> Javascript, HTML, CSS<br/>
+                        <b>Database:</b> MongoDB<br/>
+                        <b>Tools:</b> vite, body-parser<br/>
+                        <b>IDE:</b> VS Code
+                        <br/> <br/>
+                        <a href='https://github.com/vivianaalba/crud-jan-8' target='_blank' rel="noreferrer">
+                            <button className='project--links'>See GitHub Repository</button>
+                        </a>
+                        </p>
                     </div>
                 </div>
 
@@ -38,7 +51,7 @@ function Projects() {
                         <b>Tools:</b> vite<br/>
                         <b>IDE:</b> VS Code
                         <br/> <br/>
-                        <a href='https://github.com/vivianaalba/pokemon-api-feb21' target='_blank'>
+                        <a href='https://github.com/vivianaalba/pokemon-api-feb21' target='_blank' rel="noreferrer">
                             <button className='project--links'>See GitHub Repository</button>
                         </a>
                         </p>
@@ -46,18 +59,55 @@ function Projects() {
                 </div>
 
                 <div className="card--odd">
-                    <img src='/images/pink-circle.svg' alt=''/>
+                    <video controls width="640" height="360" className='project--video'>
+                        <source src="videos/meme-generator.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+
                     <div className='project--description'>
                         <h2>Meme Generator</h2>
-                        <p></p>
+                        <p>
+                        This is vibrant and whimsical meme generator application, made for users of all ages! 
+                        <br/> <br/>
+                        Featuring an eclectic array of the latest and trendiest meme images sourced from a secure and responsive API, this application is a treasure chest of comedic gems for all occasions. All users can infuse their own personal touch onto these memes, as this application has the ability to add custom text both at the top and bottom of the image.
+                        <br/> <br/>
+                        <b>Tech:</b> Javascript, HTML, CSS<br/>
+                        <b>Libraries:</b> react<br/>
+                        <b>Tools:</b> vite<br/>
+                        <b>IDE:</b> VS Code
+                        <br/> <br/>
+                        <a href='https://github.com/vivianaalba/meme-generator-feb14' target='_blank' rel="noreferrer">
+                            <button className='project--links'>See GitHub Repository</button>
+                        </a>
+                        </p>
                     </div>
                 </div>
 
                 <div className="card--even">
+                    {/* <video controls width="640" height="360" className='project--video'>
+                        <source src="videos/meme-generator.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video> */}
+
                     <img src='/images/pink-circle.svg' alt=''/>
+
                     <div className='project--description'>
-                        <h2>Authentication App</h2>
-                        <p></p>
+                        <h2>Authentication Application</h2>
+                        <p>
+                        Experience a dynamic full-stack application offering seamless create and read functionalities without worrying about security risks! This application was developed with built in security features, such as user authentication and the use of a secure database.
+                        <br/> <br/>
+                        Our platform empowers users with the ability to effortlessly craft personalized accounts, complete with unique credentials for secure access. Users can easily create and browse posts, building engagement and interaction on this application.
+                        <br/> <br/>
+                        <b>Tech:</b> Javascript, HTML, CSS<br/>
+                        <b>Libraries:</b> passport, prisma, bcrypt, EJS, express, dotenv<br/>
+                        <b>Tools:</b> nodemon, passport-local<br/>
+                        <b>Database:</b> mongoDB<br/>
+                        <b>IDE:</b> VS Code
+                        <br/> <br/>
+                        <a href='https://github.com/vivianaalba/authorization-jan22' target='_blank' rel="noreferrer">
+                            <button className='project--links'>See GitHub Repository</button>
+                        </a>
+                        </p>
                     </div>
                 </div>
 
