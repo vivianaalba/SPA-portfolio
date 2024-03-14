@@ -1,0 +1,52 @@
+/* Projects Styling */
+
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.card--odd {
+    display: flex;
+}
+
+.card--even {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.project--description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+}
+
+.project--links {
+    background-color: #ffcccc;
+    border: none;
+    border-radius: 20px;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+.project--video {
+    padding: 15px;
+}
+
+.project--links:hover {
+    background-color: #f0b31a;
+    color: #222;
+}
