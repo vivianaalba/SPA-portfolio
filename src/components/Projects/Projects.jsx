@@ -16,7 +16,7 @@ function Projects() {
                         <br/> <br/>
                         At its core, this application is a standard CRUD application. Users can effortlessly navigate through its interface to perform essential tasks such as reading, creating, updating, or deleting data. This application was designed to offer functionality and convenience.
                         <br/> <br/>
-                        <b>Tech:</b> Javascript, HTML, CSS<br/>
+                        <b>Tech:</b> Javascript, React, HTML, CSS<br/>
                         <b>Database:</b> MongoDB<br/>
                         <b>Tools:</b> vite, body-parser<br/>
                         <b>IDE:</b> VS Code
@@ -47,8 +47,8 @@ function Projects() {
                         evokes nostalgia and excitement reminiscent of the Pokemon games and animated 
                         series. 
                         <br/> <br/>
-                        <b>Tech:</b> Javascript, HTML, CSS<br/>
-                        <b>Libraries:</b> react, axios, swr, react-dom<br/>
+                        <b>Tech:</b> Javascript, React, HTML, CSS<br/>
+                        <b>Libraries:</b> axios, swr, react-dom<br/>
                         <b>Tools:</b> vite<br/>
                         <b>IDE:</b> VS Code
                         <br/> <br/>
@@ -68,12 +68,12 @@ function Projects() {
                     <div className='project--description'>
                         <h2>Meme Generator</h2>
                         <p>
-                        This is vibrant and whimsical meme generator application, made for users of all ages! 
+                        This is vibrant and whimsical meme generator application, made for users of all ages! Featuring an eclectic array of the latest and trendiest meme images sourced from a secure and responsive API, this application contains comedic gems for all occasions. 
                         <br/> <br/>
-                        Featuring an eclectic array of the latest and trendiest meme images sourced from a secure and responsive API, this application is a treasure chest of comedic gems for all occasions. All users can infuse their own personal touch onto these memes, as this application has the ability to add custom text both at the top and bottom of the image.
+                        All users can infuse their own personal touch to create a meme for every occasion, as this application has the ability to add custom text to the top and bottom of the image. After creating the perfect meme, users have the ability to download their new creation directly to their computer with a click of a button.
                         <br/> <br/>
-                        <b>Tech:</b> Javascript, HTML, CSS<br/>
-                        <b>Libraries:</b> react<br/>
+                        <b>Tech:</b> Javascript, React, HTML, CSS<br/>
+                        <b>Libraries:</b> js-file-download<br/>
                         <b>Tools:</b> vite<br/>
                         <b>IDE:</b> VS Code
                         <br/> <br/>

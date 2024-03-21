@@ -3,6 +3,12 @@
     padding: 25%;
     text-align: center;
     padding-top: 0%;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 25px;
+
 }
 
 .about-title {
@@ -24,7 +30,7 @@
   }
 
 .about--blue--img {
-    height: 13rem;
+    height: 20rem;
 }
 
 .about--blue {
@@ -35,7 +41,7 @@
 }
 
 .about--dots--img {
-    height: 4rem;
+    height: 8rem;
 }
 
 .about--dots {
@@ -48,7 +54,22 @@
 .about--purple {
     z-index: -1;
     position: absolute;
-    top: 75%;
-    left: 80%;
+    top: 80%;
+    left: 85%;
+}
+
+.about--purple--img {
+    height: 10rem;
+}
+
+.about--circle {
+    z-index: -1;
+    position: absolute;
+    top: 90%;
+    left: 10%;
+}
+
+.about--circle--img {
+    height: 15rem;
 }
   

@@ -4,21 +4,23 @@ export default function About() {
     function Summary() {
         return (
             <>
-            Growing up, I was quite reserved, often seeking refuge behind books and finding peach in my own imagination. However, as I have gotten older and become more comfortable in my own skin, I've discovered the power of my voice and the significance of effective communication. 
+            Technology serves as a powerful conduit for sharing our visions and truths with the world. Whether you are looking to create an ecletcic, eye catching deisgn or a powerful, secure, and reliable application, I can assist in making your vision come to fruition.
             <br/><br/>
-            I firmly believe that technology serves as a powerful conduit for sharing our visions and truths with the world. Positioned at every turn, technology becomes the means through which we can illuminate your vision, placing it in the hands of those who not only support it but also catalyze its realization.
-            <br/><br/>
-            Let's work together to make your vision a reality.
+            I am eager to connect with like-minded professionals, mentors, and collaborators. Let’s connect, discuss ideas, and explore potential collaborations!
             <h2>Summary</h2>
             I am a results-oriented web developer with a robust foundation in computer science and a proven track record of delivering clean, scalable, and innovative code. Eager to channel my technical expertise and creativity, I am committed to steering impactful projects to success.
             <h2>Skills</h2>
-            Tech: JavaScript, React, MongoDB, CSS, HTML, Python, SQL, R, Tableau<br/> 
-            Productivity: Microsoft Office,  Slack, Asana, Google Workspace, Trello<br/> 
-            Languages: Spanish (Fluent)
+            <b>Tech:</b> JavaScript, React, MongoDB, CSS, HTML, Python, SQL, R, Tableau<br/> 
+            <b>Libraries:</b> axios, vite, passport, mongoose, prisma, express, tailwind, bootstrap<br/> 
+            <b>Productivity:</b> Microsoft Office,  Slack, Asana, Google Workspace, Trello, GitHub<br/> 
+            <b>Languages:</b> Spanish (Fluent)
             <h2>Education</h2>
-            University of California, Santa Cruz<br/> 
+            <b>University of California, Santa Cruz</b><br/> 
             B.S. Molecular, Cell, Development Biology<br/> 
             B.A. Latin American and Latino Studies
+            <br/><br/>
+            <b>The Knowledge House</b><br/> 
+            Innovation Fellow - Web Development Track<br/> 
             </>
         )
     }
@@ -32,15 +34,19 @@ export default function About() {
             </div>
 
             <div className='about--purple'>
-                <img className='contact--purple--img' src='/images/purple.svg' alt='' />
+                <img className='about--purple--img' src='/images/purple.svg' alt='' />
             </div>
 
             <div className='about--dots'>
-                <img className='contact--dots--img' src='/images/dots.svg' alt='' />
+                <img className='about--dots--img' src='/images/dots.svg' alt='' />
+            </div>
+
+            <div className='about--circle'>
+                <img className='about--circle--img' src='/images/pink-circle.svg' alt='' />
             </div>
 
             <div className='about--blue'>
-                <img className='contact--blue--img' src='/images/blue.svg' alt='' />
+                <img className='about--blue--img' src='/images/blue.svg' alt='' />
             </div>
         </>
     )
