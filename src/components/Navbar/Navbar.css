@@ -31,7 +31,7 @@
 
 .navbar a {
     text-decoration: none; /* removes link underline */
-    color: black;
+    color: rgb(255, 255, 255);
     padding: 10px 20px; /* better spacing */
     font-weight: bolder ;
     font-size: 2rem;

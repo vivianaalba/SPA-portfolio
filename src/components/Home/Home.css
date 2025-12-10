@@ -1,19 +1,30 @@
 /* Home Styling */
 
+.home {
+  position: relative;
+  min-height: 100vh; /* hero section = full screen height */
+}
+
 .welcome {
-    position: absolute;
-    top: 5%;
+    margin-top: 5%;
 }
 
 .home--hello {
-    color:#fff;
-    font-size: 20vh;
-    padding-left: 10vh;
-    padding-bottom: 0;
-    display: block;
-    top:0%;
-    z-index: 1;
-    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+  color: #fff;
+  font-size: 15vh;
+  padding-left: 10vh;
+  /* padding-top: 5vh; */
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-shadow: 0 0 20px rgba(150, 149, 149, 0.5);
+  animation: typing 8s steps(20, end) forwards;
+}
+
+/* Reveal text left → right */
+@keyframes typing {
+  from { width: 0ch; }
+  to { width: 20ch; }
 }
 
 .home--name {
@@ -34,33 +45,10 @@
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
 }
 
-.pink--circle {
-    z-index: -1;
-    position: absolute;
-    top: 27%;
-    left: 50%;
-}
-
-.pink--circle--img {
-    height: 18rem;
-    top: 0%;
-}
-
-.green--shape {
-    z-index: -1;
-    position: absolute;
-    top: 60%;
-    left: 70%;
-}
-
-.green--shape--img {
-    height: 43rem;
-}
-
 .hand {
     z-index: -1;
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 33%;
 }
 
@@ -71,7 +59,7 @@
 .line--arrow {
     z-index: -1;
     position: absolute;
-    top: 42%;
+    top: 5%;
     left: 75%;
 }
 
@@ -79,42 +67,135 @@
     height: 20rem;
 }
 
-.square {
+
+/* About Me Styling */
+.about-me {
+  margin-top: 10vh;    
+  padding: 0 15%;  
+  padding-left: 10vh;
+  font-size: 20px;
+  text-align: left;
+}
+
+h2 {
+    font-size: 25px;
+
+}
+
+.about-title {
+  font-size: 4rem;
+  color: #fff;
+  padding-top: 5vh;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-shadow: 0 0 20px rgba(150, 149, 149, 0.5);
+}
+
+.summary-text {
+  text-align: left;
+}
+  
+.about--halfwheel--img {
+    height: 22rem;
+}
+
+.about--halfwheel {
     z-index: -1;
-    position: fixed;
-    top: 25%;
-    left: 2%;
-}
-
-.square--img {
-    height: 3rem;
-}
-
-.button {
-    z-index: 1;
     position: absolute;
-    top: 85%;
-    left: 72%;
+    top: 240%;
+    left: 65%;
 }
 
-.projects--button {
-    width: 15rem;
-    height: 6rem;
-    background-color: whitesmoke;
+.about--dots--img {
+    height: 7rem;
+}
+
+.about--dots {
+    z-index: -1;
+    position: absolute;
+    top: 225%;
+    left: 40%;
+}
+
+.about--purple {
+    z-index: -1;
+    position: absolute;
+    top: 140%;
+    left: 85%;
+}
+
+.about--purple--img {
+    height: 10rem;
+}
+
+.about--circle {
+    z-index: -1;
+    position: absolute;
+    top: 150%;
+    left: 10%;
+}
+
+.about--circle--img {
+    height: 15rem;
+}  
+
+.about-me, 
+.about-title, 
+.about-intro, 
+.summary-text {
+  text-align: left !important;
+}
+
+
+/* Projects Styling */
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.card--odd {
+    display: flex;
+}
+
+.card--even {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.project--description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(250, 250, 250);
+}
+
+.project--links {
+    background-color: #ffcccc;
     border: none;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 2rem;
-    border-radius: 30px; /* Rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
-    padding: 10px 20px; 
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+    font-weight: bold;
 }
 
-.projects--button:hover {
-    background-color: rgb(245, 182, 64);
-    color: #222;
+.project--video {
+    padding: 15px;
+}
+
+.project--links:hover {
+    background-color: #cfcecc;
+    color: #ffffff;
 }

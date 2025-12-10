@@ -1,9 +1,9 @@
 body {
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
     display: flex;
     flex-direction: column;
-    background-color: #FAE98E;
+    background-color: #0a0a0a;
     font-family: 'poppins', sans-serif;
-    color: black;
+    color: rgb(255, 255, 255);
 }
