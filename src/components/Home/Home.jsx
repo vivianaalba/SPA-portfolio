@@ -165,11 +165,17 @@ export default function Home() {
             {/* the actual contact card */}
             <div className="contact--card">
                 <h2>Let's Connect!</h2>
-                <h3>x x</h3>
-                <h4>vxxx@gmail.com</h4>
-                <a href="https://www.linkedin.com/in/xxx/">
-                <img src="/images/linkedin.svg" alt="LinkedIn Logo" className="contact--linkedin" />
-                </a>
+                <h3>Viviana Alba</h3>
+                <h4>vivianaalba7@gmail.com</h4>
+                <div className="contact--icon-row">
+                    <a href="https://www.linkedin.com/in/vivianaalba/" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/linkedin.svg" alt="LinkedIn Logo" className="contact--logos" />
+                    </a>
+
+                    <a href="https://github.com/vivianaalba" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/github.svg" alt="GitHub Logo" className="contact--logos" />
+                    </a>
+                </div>
             </div>
         </section>
     </>
