@@ -1,7 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
-import Contact from './components/Contact/Contact';
 import Navbar from './components/Navbar/Navbar';
 
 function App() {
@@ -15,7 +14,7 @@ function App() {
         {/* Components without props */}
         <Route path="/" element = {<Home />} />
         {/* Components with props */}
-        <Route path="/Contact" element = {<Contact props="phone"/>} />
+        {/* <Route path="/Contact" element = {<Contact props="phone"/>} /> */}
       </Routes>
 
     </Router>

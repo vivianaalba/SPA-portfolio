@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <>
       {/* HERO / WELCOME SECTION */}
-      <div className='home'>
+      <div id="home" className='home'>
         <div className='welcome'>
           <h1 className="home--hello">HELLO</h1>
           <h2 className="home--name">My name is Viviana and I am a </h2>
@@ -46,7 +46,7 @@ export default function Home() {
       </div> 
 
       {/* ABOUT ME SECTION */}
-      <div className="about-me">
+      <div id="about" className="about-me">
         <h1 className="about-title">About Me</h1>
         <Summary />
       </div>
@@ -60,118 +60,82 @@ export default function Home() {
         <img className='about--dots--img' src='/images/dots.svg' alt='' />
       </div>
 
-      {/* <div className='about--circle'>
-        <img className='about--circle--img' src='/images/pink-circle.svg' alt='' />
-      </div> */}
-
-      {/* <div className='about--blue'>
-        <img className='about--blue--img' src='/images/blue.svg' alt='' />
-      </div> */}
-
       {/* PROJECTS SECTION */}
+
+      <div id="projects" className="projects">
+        <h1 className="projects-title">Projects</h1>
+        <h3>Here is a collection of only a few of the projects I have worked on. For more projects, check out my Github!</h3>
+      </div>
     
         <section className="projectContainer">
             <div className="cardContainer">
-                
-                <div className="card--odd">
-                    <img src='/images/pink-circle.svg' alt=''/>
+
+                <div className="card">
+                    <img src='/images/projects/college.svg' alt=''/>
                     <div className='project--description'>
-                        <h2>Login Application</h2>
+                        <h2>College Comparison Analysis</h2>
                         <p>
-                        This application was designed to store invaluable user information within a secure MongoDB database, ensuring that all user and client data is protected from data leaks. 
+                        A data-driven analysis of over 6,000 U.S. undergraduate institutions examining how cost, faculty investment, and other factors relate to student outcomes, satisfaction, and institutional rankings.
                         <br/> <br/>
-                        At its core, this application is a standard CRUD application. Users can effortlessly navigate through its interface to perform essential tasks such as reading, creating, updating, or deleting data. This application was designed to offer functionality and convenience.
+                        <b>Tech:</b>Python<br/>
+                        <b>Libraries:</b>pandas, numpy, scipy, statsmodels, scikit-learn, requests, BeautifulSoup4, json, python-dotenv, fuzzywuzzy, matplotlib, seaborn, geopandas<br/>
                         <br/> <br/>
-                        <b>Tech:</b> Javascript, React, HTML, CSS<br/>
-                        <b>Database:</b> MongoDB<br/>
-                        <b>Tools:</b> vite, body-parser<br/>
-                        <b>IDE:</b> VS Code
-                        <br/> <br/>
-                        <a href='https://github.com/vivianaalba/crud-jan-8' target='_blank' rel="noreferrer">
+                        <a href='https://github.com/vivianaalba/college-comparison-project' target='_blank' rel="noreferrer">
                             <button className='project--links'>See GitHub Repository</button>
                         </a>
                         </p>
                     </div>
                 </div>
 
-                <div className="card--even">
-                    <video controls width="640" height="360" className='project--video'>
-                        <source src="videos/pokemon-directory.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+                <div className="card">
+                    <img src='/images/projects/trash.svg' alt=''/>
 
                     <div className='project--description'>
-                        <h2>Pokemon Directory</h2>
+                        <h2>Deep Learning Trash Classifier</h2>
                         <p>
-                        The project utilizes a Pokemon API to fetch comprehensive data about various 
-                        Pokemon species, including their abilities, types, and more. Through seamless integration with the API, users can explore a collection of 
-                        Pokemon, enriching their knowledge and fandom of the franchise. 
+                        A 9-class image classification task using transfer learning to compare the performance of four deep learning architectures (ResNet50, ResNet101, EfficientNetB0, and VGG16) using advanced data augmentation and performance evaluation across training, validation, and test datasets.
                         <br/> <br/>
-                        To ensure a cohesive and aesthetically pleasing user interface, the project 
-                        incorporates focused styling techniques to enhance usability and visual appeal. 
-                        To add a layer of immersion, the project is complete with images and audio that 
-                        evokes nostalgia and excitement reminiscent of the Pokemon games and animated 
-                        series. 
+                        <b>Tech:</b>Python<br/>
+                        <b>Libraries:</b>numpy, pandas, matplotlib, seaborn, Pillow, tensorflow, scikit-learn<br/>
                         <br/> <br/>
-                        <b>Tech:</b> Javascript, React, HTML, CSS<br/>
-                        <b>Libraries:</b> axios, swr, react-dom<br/>
-                        <b>Tools:</b> vite<br/>
-                        <b>IDE:</b> VS Code
-                        <br/> <br/>
-                        <a href='https://github.com/vivianaalba/pokemon-api-feb21' target='_blank' rel="noreferrer">
+                        <a href='https://github.com/vivianaalba/ml-trash-sorter' target='_blank' rel="noreferrer">
                             <button className='project--links'>See GitHub Repository</button>
                         </a>
                         </p>
                     </div>
                 </div>
 
-                <div className="card--odd">
-                    <video controls width="640" height="360" className='project--video'>
-                        <source src="videos/meme-generator.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+                <div className="card">
+                    <img src='/images/projects/data_processing.svg' alt=''/>
 
                     <div className='project--description'>
-                        <h2>Meme Generator</h2>
+                        <h2>Data Processing Dashboard</h2>
                         <p>
-                        This is vibrant and whimsical meme generator application, made for users of all ages! Featuring an eclectic array of the latest and trendiest meme images sourced from a secure and responsive API, this application contains comedic gems for all occasions. 
+                        A web application that parses, filters, projects, groups, aggregates, and joins CSV datasets using custom Python functions with an easy-to-use UI interface.
                         <br/> <br/>
-                        All users can infuse their own personal touch to create a meme for every occasion, as this application has the ability to add custom text to the top and bottom of the image. After creating the perfect meme, users have the ability to download their new creation directly to their computer with a click of a button.
+                        <b>Tech:</b>Python<br/>
+                        <b>Libraries:</b>Streamlit, regex<br/>
                         <br/> <br/>
-                        <b>Tech:</b> Javascript, React, HTML, CSS<br/>
-                        <b>Libraries:</b> js-file-download<br/>
-                        <b>Tools:</b> vite<br/>
-                        <b>IDE:</b> VS Code
-                        <br/> <br/>
-                        <a href='https://github.com/vivianaalba/meme-generator-feb14' target='_blank' rel="noreferrer">
+                        <a href='https://github.com/vivianaalba/dsci551-project' target='_blank' rel="noreferrer">
                             <button className='project--links'>See GitHub Repository</button>
                         </a>
                         </p>
                     </div>
                 </div>
 
-                <div className="card--even">
-                    {/* <video controls width="640" height="360" className='project--video'>
-                        <source src="videos/meme-generator.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video> */}
+                <div className="card">
 
-                    <img src='/images/pink-circle.svg' alt=''/>
+                    <img src='/images/projects/car_recalls.svg' alt=''/>
 
                     <div className='project--description'>
-                        <h2>Authentication Application</h2>
+                        <h2>Car Recalls Clustering</h2>
                         <p>
-                        Experience a dynamic full-stack application offering seamless create and read functionalities without worrying about security risks! This application was developed with built in security features, such as user authentication and the use of a secure database.
+                        Using unsupervised learning, this collaborative group project clusters 60 years of NHTSA recall data to uncover patterns in vehicle safety severity across manufacturers, components, and time.
                         <br/> <br/>
-                        Our platform empowers users with the ability to effortlessly craft personalized accounts, complete with unique credentials for secure access. Users can easily create and browse posts, building engagement and interaction on this application.
+                        <b>Tech:</b>Python<br/>
+                        <b>Libraries:</b>pandas, numpy, scikit-learn, seaborn, matplotlib<br/>
                         <br/> <br/>
-                        <b>Tech:</b> Javascript, HTML, CSS<br/>
-                        <b>Libraries:</b> passport, prisma, bcrypt, EJS, express, dotenv<br/>
-                        <b>Tools:</b> nodemon, passport-local<br/>
-                        <b>Database:</b> mongoDB<br/>
-                        <b>IDE:</b> VS Code
-                        <br/> <br/>
-                        <a href='https://github.com/vivianaalba/authorization-jan22' target='_blank' rel="noreferrer">
+                        <a href='https://github.com/vivianaalba/car-recalls-clustering' target='_blank' rel="noreferrer">
                             <button className='project--links'>See GitHub Repository</button>
                         </a>
                         </p>
@@ -180,6 +144,33 @@ export default function Home() {
 
             </div>
         </section>
+
+        {/* CONTACT ME SECTION */}
+        <div>
+
+        <div id="contact" className="contact--card">
+            <h2>Let's Connect!</h2>
+            <h3>Viviana Alba</h3>
+            <h4>vivianaalba7@gmail.com</h4>
+            <a href="https://www.linkedin.com/in/vivianaalba/"><img src="/images/linkedin.svg" alt="LinkedIn Logo" className="contact--linkedin"/></a>
+        </div>
+
+
+        <div className='contact--multiple'>
+            <img className='contact--multiple--img' src='/images/contact--multiple.svg' alt='' />
+        </div>
+
+
+        <div className='contact--purple'>
+            <img className='contact--purple--img' src='/images/purple.svg' alt='' />
+        </div>
+
+
+        <div className='contact--blue'>
+            <img className='contact--blue--img' src='/images/blue.svg' alt='' />
+        </div>
+
+        </div> 
     </>
 
   )

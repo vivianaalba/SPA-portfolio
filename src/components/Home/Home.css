@@ -48,7 +48,7 @@
 .hand {
     z-index: -1;
     position: absolute;
-    top: 65%;
+    top: 68%;
     left: 33%;
 }
 
@@ -79,7 +79,6 @@
 
 h2 {
     font-size: 25px;
-
 }
 
 .about-title {
@@ -114,31 +113,9 @@ h2 {
 .about--dots {
     z-index: -1;
     position: absolute;
-    top: 225%;
-    left: 40%;
-}
-
-.about--purple {
-    z-index: -1;
-    position: absolute;
-    top: 140%;
-    left: 85%;
-}
-
-.about--purple--img {
-    height: 10rem;
-}
-
-.about--circle {
-    z-index: -1;
-    position: absolute;
-    top: 150%;
-    left: 10%;
-}
-
-.about--circle--img {
-    height: 15rem;
-}  
+    top: 205%;
+    left: 65%;
+} 
 
 .about-me, 
 .about-title, 
@@ -149,6 +126,23 @@ h2 {
 
 
 /* Projects Styling */
+.projects {
+  margin-top: 10vh;    
+  padding: 0 15%;  
+  padding-left: 10vh;
+  font-size: 20px;
+  text-align: left;
+}
+
+.projects-title {
+  font-size: 4rem;
+  color: #fff;
+  padding-top: 5vh;
+  white-space: nowrap;
+  overflow: hidden;
+  text-shadow: 0 0 20px rgba(150, 149, 149, 0.5);
+}
+
 .projectContainer {
     display: flex;
     flex-direction: column;
@@ -160,13 +154,39 @@ h2 {
     flex-direction: column;
 }
 
-.card--odd {
-    display: flex;
+.card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;              /* space between image and text */
+  margin-bottom: 4rem;    /* space between cards */
 }
 
-.card--even {
-    display: flex;
-    flex-direction: row-reverse;
+/* Image sizing inside cards */
+.card img{
+  flex-shrink: 0;
+  width: 35%;             /* controls how wide the image is */
+  max-width: 320px;
+  height: auto;
+  display: block;
+  border-radius: 16px;    /* soft corners so outline looks intentional */
+}
+
+/* Text block tweaks */
+.project--description {
+  flex: 1;                          /* take remaining space */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 0.75rem;
+}
+
+.project--description h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+.project--description p {
+  margin: 0;
 }
 
 .project--description {
@@ -181,7 +201,7 @@ h2 {
     background-color: #ffcccc;
     border: none;
     border-radius: 20px;
-    color: #ffffff;
+    color: #070707;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -191,11 +211,113 @@ h2 {
     font-weight: bold;
 }
 
-.project--video {
-    padding: 15px;
-}
-
 .project--links:hover {
     background-color: #cfcecc;
     color: #ffffff;
+}
+
+/* Contact Me Styling */
+/* Contact Section Card */
+.contact--card {
+  margin: 5vh auto 6vh auto;     /* centers horizontally + adds top/bottom space */
+  padding: 2rem 2rem;
+  width: 60%;
+  max-width: 500px;
+
+  background: rgba(232, 228, 228, 0.04);
+  border-radius: 20px;
+
+  text-align: center;
+  color: #ffffff;
+
+  box-shadow: 0 0 20px rgba(247, 242, 242, 0.05);
+  backdrop-filter: blur(8px);      /* glassy effect */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  transition: transform 0.3s ease, box-shadow 0.4s ease;
+}
+
+.contact--card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.12);
+}
+
+/* Headings */
+.contact--card h2 {
+  font-size: 3rem;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+}
+
+.contact--card h3,
+.contact--card h4 {
+  margin: 0.5rem 0;
+  font-weight: 300;
+  color: #eaeaea;
+}
+
+/* LinkedIn Icon */
+.contact--linkedin {
+  width: 50px;
+  height: 50px;
+  margin-top: 1rem;
+  transition: transform 0.2s ease, filter 0.3s ease;
+  filter: drop-shadow(0 0 4px rgba(0, 150, 255, 0.3));
+}
+
+.contact--linkedin:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 8px rgba(0, 150, 255, 0.6));
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .contact--card {
+    width: 85%;
+    padding: 3rem 2rem;
+  }
+
+  .contact--card h2 {
+    font-size: 2rem;
+  }
+}
+
+.contact--purple {
+    z-index: -1;
+    position: absolute;
+    top: 420%;
+    left: 70%;
+}
+
+.contact--purple--img {
+    height: 12rem;
+}
+
+.contact--blue {
+    z-index: -1;
+    position: absolute;
+    top: 435%;
+    left: 6%;
+}
+
+.contact--blue--img {
+    height: 13rem;
+}
+
+
+.contact--multiple {
+    z-index: -2;
+    position: absolute;
+    top: 470%;
+    left: 90%
+}
+
+.contact--multiple--img {
+    height: 10rem;
 }
