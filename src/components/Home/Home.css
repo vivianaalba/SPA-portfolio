@@ -218,6 +218,11 @@ h2 {
 
 /* Contact Me Styling */
 /* Contact Section Card */
+.contact-section {
+  position: relative;       /* shapes will now position relative to this */
+  padding: 6rem 0 8rem;     /* give it its own vertical space */
+}
+
 .contact--card {
   margin: 5vh auto 6vh auto;     /* centers horizontally + adds top/bottom space */
   padding: 2rem 2rem;
@@ -276,6 +281,33 @@ h2 {
   filter: drop-shadow(0 0 8px rgba(0, 150, 255, 0.6));
 }
 
+.contact--purple--img { height: 12rem; }
+.contact--blue--img { height: 13rem; }
+.contact--multiple--img { height: 10rem; }
+
+.contact--purple,
+.contact--blue,
+.contact--multiple {
+  position: absolute;
+  z-index: -1;
+}
+
+/* tweak these to taste, but now they only move inside the section */
+.contact--purple {
+  top: 0;
+  right: 5%;
+}
+
+.contact--blue {
+  bottom: 20;
+  left: 5%;
+}
+
+.contact--multiple {
+  bottom: 5%;
+  right: 0%;
+}
+
 /* Mobile responsiveness */
 @media (max-width: 600px) {
   .contact--card {
@@ -286,38 +318,4 @@ h2 {
   .contact--card h2 {
     font-size: 2rem;
   }
-}
-
-.contact--purple {
-    z-index: -1;
-    position: absolute;
-    top: 420%;
-    left: 70%;
-}
-
-.contact--purple--img {
-    height: 12rem;
-}
-
-.contact--blue {
-    z-index: -1;
-    position: absolute;
-    top: 435%;
-    left: 6%;
-}
-
-.contact--blue--img {
-    height: 13rem;
-}
-
-
-.contact--multiple {
-    z-index: -2;
-    position: absolute;
-    top: 470%;
-    left: 90%
-}
-
-.contact--multiple--img {
-    height: 10rem;
 }

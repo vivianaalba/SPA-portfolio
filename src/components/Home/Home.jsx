@@ -146,31 +146,32 @@ export default function Home() {
         </section>
 
         {/* CONTACT ME SECTION */}
-        <div>
+        <section id="contact" className="contact-section">
+            {/* background shapes that relate to Contact */}
+            <div className="contact-shapes">
+                <div className="contact--purple">
+                <img className="contact--purple--img" src="/images/purple.svg" alt="" />
+                </div>
 
-        <div id="contact" className="contact--card">
-            <h2>Let's Connect!</h2>
-            <h3>Viviana Alba</h3>
-            <h4>vivianaalba7@gmail.com</h4>
-            <a href="https://www.linkedin.com/in/vivianaalba/"><img src="/images/linkedin.svg" alt="LinkedIn Logo" className="contact--linkedin"/></a>
-        </div>
+                <div className="contact--blue">
+                <img className="contact--blue--img" src="/images/blue.svg" alt="" />
+                </div>
 
+                <div className="contact--multiple">
+                <img className="contact--multiple--img" src="/images/contact--multiple.svg" alt="" />
+                </div>
+            </div>
 
-        <div className='contact--multiple'>
-            <img className='contact--multiple--img' src='/images/contact--multiple.svg' alt='' />
-        </div>
-
-
-        <div className='contact--purple'>
-            <img className='contact--purple--img' src='/images/purple.svg' alt='' />
-        </div>
-
-
-        <div className='contact--blue'>
-            <img className='contact--blue--img' src='/images/blue.svg' alt='' />
-        </div>
-
-        </div> 
+            {/* the actual contact card */}
+            <div className="contact--card">
+                <h2>Let's Connect!</h2>
+                <h3>x x</h3>
+                <h4>vxxx@gmail.com</h4>
+                <a href="https://www.linkedin.com/in/xxx/">
+                <img src="/images/linkedin.svg" alt="LinkedIn Logo" className="contact--linkedin" />
+                </a>
+            </div>
+        </section>
     </>
 
   )
