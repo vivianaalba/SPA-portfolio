@@ -1,6 +1,7 @@
-import './Home.css'; 
+import './Home.css';
 
 function Summary() {
+
   return (
     <div className="summary-text">
       I started my career in clinical research, captivated by the cutting-edge technology revolutionizing the field of medicine. Conducting research on innovative technology, such as imaging devices and surgical tools, I developed a passion for technology as I witnessed its leading impact in life-saving breakthroughs within healthcare. I am currently pursuing a Master's in Applied Data Science at the University of Southern California. Scroll to see a collection of my work, skills, and interests!
@@ -25,6 +26,7 @@ function Summary() {
 }
 
 export default function Home() {
+
   return (
     <>
       {/* HERO / WELCOME SECTION */}
@@ -73,17 +75,29 @@ export default function Home() {
                 <div className="card">
                     <img src='/images/projects/college.svg' alt=''/>
                     <div className='project--description'>
+
                         <h2>College Comparison Analysis</h2>
                         <p>
-                        A data-driven analysis of over 6,000 U.S. undergraduate institutions examining how cost, faculty investment, and other factors relate to student outcomes, satisfaction, and institutional rankings.
-                        <br/> <br/>
-                        <b>Tech:</b>Python<br/>
-                        <b>Libraries:</b>pandas, numpy, scipy, statsmodels, scikit-learn, requests, BeautifulSoup4, json, python-dotenv, fuzzywuzzy, matplotlib, seaborn, geopandas<br/>
-                        <br/> <br/>
-                        <a href='https://github.com/vivianaalba/college-comparison-project' target='_blank' rel="noreferrer">
-                            <button className='project--links'>See GitHub Repository</button>
-                        </a>
+                          A data-driven analysis of over 6,000 U.S. undergraduate institutions examining how cost, faculty investment, and other factors relate to student outcomes, satisfaction, and institutional rankings.
+                          <br/> <br/>
+                          <b>Tech: </b>Python<br/>
+                          <b>Libraries: </b>pandas, numpy, scipy, statsmodels, scikit-learn, requests, BeautifulSoup4, json, python-dotenv, fuzzywuzzy, matplotlib, seaborn, geopandas<br/>
+                          <br/> <br/>
                         </p>
+
+                        <div className="project--button-row">
+
+                          <a href='https://github.com/vivianaalba/college-comparison-project' target='_blank' rel="noreferrer">
+                              <button className='project--links'>See GitHub Repository</button>
+                          </a>
+
+                          <button 
+                            className='project--links'
+                            onClick={() => window.open('/docs/college_comparison_report.pdf', '_blank')}
+                            >
+                              See Report</button>
+                        </div>
+                
                     </div>
                 </div>
 
@@ -93,17 +107,18 @@ export default function Home() {
                     <div className='project--description'>
                         <h2>Deep Learning Trash Classifier</h2>
                         <p>
-                        A 9-class image classification task using transfer learning to compare the performance of four deep learning architectures (ResNet50, ResNet101, EfficientNetB0, and VGG16) using advanced data augmentation and performance evaluation across training, validation, and test datasets.
-                        <br/> <br/>
-                        <b>Tech:</b>Python<br/>
-                        <b>Libraries:</b>numpy, pandas, matplotlib, seaborn, Pillow, tensorflow, scikit-learn<br/>
-                        <br/> <br/>
+                          A 9-class image classification task using transfer learning to compare the performance of four deep learning architectures (ResNet50, ResNet101, EfficientNetB0, and VGG16) using advanced data augmentation and performance evaluation across training, validation, and test datasets.
+                          <br/> <br/>
+                          <b>Tech: </b>Python<br/>
+                          <b>Libraries: </b>numpy, pandas, matplotlib, seaborn, Pillow, tensorflow, scikit-learn<br/>
+                          <br/> <br/>
+                        </p>
                         <a href='https://github.com/vivianaalba/ml-trash-sorter' target='_blank' rel="noreferrer">
                             <button className='project--links'>See GitHub Repository</button>
                         </a>
-                        </p>
                     </div>
                 </div>
+
 
                 <div className="card">
                     <img src='/images/projects/data_processing.svg' alt=''/>
@@ -111,17 +126,32 @@ export default function Home() {
                     <div className='project--description'>
                         <h2>Data Processing Dashboard</h2>
                         <p>
-                        A web application that parses, filters, projects, groups, aggregates, and joins CSV datasets using custom Python functions with an easy-to-use UI interface.
-                        <br/> <br/>
-                        <b>Tech:</b>Python<br/>
-                        <b>Libraries:</b>Streamlit, regex<br/>
-                        <br/> <br/>
-                        <a href='https://github.com/vivianaalba/dsci551-project' target='_blank' rel="noreferrer">
-                            <button className='project--links'>See GitHub Repository</button>
-                        </a>
+                          A web application that parses, filters, projects, groups, aggregates, and joins CSV datasets using custom Python functions with an easy-to-use UI interface.
+                          <br/> <br/>
+                          <b>Tech: </b>Python<br/>
+                          <b>Libraries: </b>Streamlit, regex<br/>
+                          <br/> <br/>
                         </p>
+
+                        <div className="project--button-row">
+                        
+                          <a href='https://github.com/vivianaalba/dsci551-project' target='_blank' rel="noreferrer">
+                              <button className='project--links'>See GitHub Repository</button>
+                          </a>
+                          
+                          <button 
+                            className='project--links'
+                            onClick={() => window.open('/docs/data_processing_report.pdf', '_blank')}
+                            >
+                              See Report</button>
+
+                          <a href='https://drive.google.com/file/d/1SVuxNNcLUgegxlZSn5dmRNdI5-kEFO3D/view' target='_blank' rel="noreferrer">
+                              <button className='project--links'>See Demo</button>
+                          </a>
+                        </div>
                     </div>
                 </div>
+
 
                 <div className="card">
 
@@ -130,15 +160,53 @@ export default function Home() {
                     <div className='project--description'>
                         <h2>Car Recalls Clustering</h2>
                         <p>
-                        Using unsupervised learning, this collaborative group project clusters 60 years of NHTSA recall data to uncover patterns in vehicle safety severity across manufacturers, components, and time.
-                        <br/> <br/>
-                        <b>Tech:</b>Python<br/>
-                        <b>Libraries:</b>pandas, numpy, scikit-learn, seaborn, matplotlib<br/>
-                        <br/> <br/>
-                        <a href='https://github.com/vivianaalba/car-recalls-clustering' target='_blank' rel="noreferrer">
-                            <button className='project--links'>See GitHub Repository</button>
-                        </a>
+                          Using unsupervised learning, this collaborative group project clusters 60 years of NHTSA recall data to uncover patterns in vehicle safety severity across manufacturers, components, and time.
+                          <br/> <br/>
+                          <b>Tech: </b>Python<br/>
+                          <b>Libraries: </b>pandas, numpy, scikit-learn, seaborn, matplotlib<br/>
+                          <br/> <br/>
                         </p>
+
+                        <div className="project--button-row">
+
+                          <a href='https://github.com/vivianaalba/car-recalls-clustering' target='_blank' rel="noreferrer">
+                              <button className='project--links'>See GitHub Repository</button>
+                          </a>
+
+                          <button 
+                            className='project--links'
+                            onClick={() => window.open('/docs/car_recalls_report.pdf', '_blank')}
+                            >
+                              See Report</button>
+                        </div>
+                    </div>
+                </div>
+
+              
+                <div className="card">
+
+                    <img src='/images/projects/covid.svg' alt=''/>
+
+                    <div className='project--description'>
+                        <h2>Disinformation, the COVID-19 pandemic, and Latin America</h2>
+                        <p>
+                          This is the project that started my interest in data science when I was an undergraduate student at the UC Santa Cruz Human Rights Investigations Lab!
+                          This study utilized open source intelligence to track the online spread of COVID-19 messaging from political administrations across Latin America. 
+                          We focused on two specific narratives, collecting data from verified social media accounts using CrowdTangle, Tweetdeck, and targeted keyword searches in English, Spanish, and Portuguese. 
+                          Relevant posts were exported, organized in CSVs, and supplemented with cross-checked references from Google and YouTube transcripts to ensure accuracy.
+                          <br/> <br/>
+                          <b>Tools: </b>Microsoft Excel, TweetDeck, CrowdTangle, TimelineJS<br/>
+                          <br/> <br/>
+                        </p>
+
+                        <div className="project--button-row">
+
+                          <button 
+                            className='project--links'
+                            onClick={() => window.open('/docs/covid_disinformation_report.pdf', '_blank')}
+                            >
+                              See Report</button>
+                        </div>
                     </div>
                 </div>
 
