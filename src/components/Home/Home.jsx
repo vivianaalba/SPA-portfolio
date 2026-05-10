@@ -63,189 +63,236 @@ export default function Home() {
       </div>
 
       {/* PROJECTS SECTION */}
-
       <div id="projects" className="projects">
-        <h1 className="projects-title">Projects</h1>
-        <h3>Here is a collection of only a few of the projects I have worked on. For more projects, check out my Github!</h3>
+        <h1 className="projects-title">Technical Projects</h1>
+        <h3>A selection of projects I have worked on. For more projects, check out my Github!</h3>
       </div>
-    
-        <section className="projectContainer">
-            <div className="cardContainer">
 
-                <div className="card">
-                    <img src='/images/projects/college.svg' alt=''/>
-                    <div className='project--description'>
+      <section className="projectContainer">
+        <div className="cardContainer">
 
-                        <h2>College Comparison Analysis</h2>
-                        <p>
-                          A data-driven analysis of over 6,000 U.S. undergraduate institutions examining how cost, faculty investment, and other factors relate to student outcomes, satisfaction, and institutional rankings.
-                          <br/> <br/>
-                          <b>Tech: </b>Python<br/>
-                          <b>Libraries: </b>pandas, numpy, scipy, statsmodels, scikit-learn, requests, BeautifulSoup4, json, python-dotenv, fuzzywuzzy, matplotlib, seaborn, geopandas<br/>
-                          <br/> <br/>
-                        </p>
-
-                        <div className="project--button-row">
-
-                          <a href='https://github.com/vivianaalba/college-comparison-project' target='_blank' rel="noreferrer">
-                              <button className='project--links'>See GitHub Repository</button>
-                          </a>
-
-                          <button 
-                            className='project--links'
-                            onClick={() => window.open('/docs/college_comparison_report.pdf', '_blank')}
-                            >
-                              See Report</button>
-                        </div>
-                
-                    </div>
-                </div>
-
-                <div className="card">
-                    <img src='/images/projects/trash.svg' alt=''/>
-
-                    <div className='project--description'>
-                        <h2>Deep Learning Trash Classifier</h2>
-                        <p>
-                          A 9-class image classification task using transfer learning to compare the performance of four deep learning architectures (ResNet50, ResNet101, EfficientNetB0, and VGG16) using advanced data augmentation and performance evaluation across training, validation, and test datasets.
-                          <br/> <br/>
-                          <b>Tech: </b>Python<br/>
-                          <b>Libraries: </b>numpy, pandas, matplotlib, seaborn, Pillow, tensorflow, scikit-learn<br/>
-                          <br/> <br/>
-                        </p>
-                        <a href='https://github.com/vivianaalba/ml-trash-sorter' target='_blank' rel="noreferrer">
-                            <button className='project--links'>See GitHub Repository</button>
-                        </a>
-                    </div>
-                </div>
-
-
-                <div className="card">
-                    <img src='/images/projects/data_processing.svg' alt=''/>
-
-                    <div className='project--description'>
-                        <h2>Data Processing Dashboard</h2>
-                        <p>
-                          A web application that parses, filters, projects, groups, aggregates, and joins CSV datasets using custom Python functions with an easy-to-use UI interface.
-                          <br/> <br/>
-                          <b>Tech: </b>Python<br/>
-                          <b>Libraries: </b>Streamlit, regex<br/>
-                          <br/> <br/>
-                        </p>
-
-                        <div className="project--button-row">
-                        
-                          <a href='https://github.com/vivianaalba/dsci551-project' target='_blank' rel="noreferrer">
-                              <button className='project--links'>See GitHub Repository</button>
-                          </a>
-                          
-                          <button 
-                            className='project--links'
-                            onClick={() => window.open('/docs/data_processing_report.pdf', '_blank')}
-                            >
-                              See Report</button>
-
-                          <a href='https://drive.google.com/file/d/1SVuxNNcLUgegxlZSn5dmRNdI5-kEFO3D/view' target='_blank' rel="noreferrer">
-                              <button className='project--links'>See Demo</button>
-                          </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div className="card">
-
-                    <img src='/images/projects/car_recalls.svg' alt=''/>
-
-                    <div className='project--description'>
-                        <h2>Car Recalls Clustering</h2>
-                        <p>
-                          Using unsupervised learning, this collaborative group project clusters 60 years of NHTSA recall data to uncover patterns in vehicle safety severity across manufacturers, components, and time.
-                          <br/> <br/>
-                          <b>Tech: </b>Python<br/>
-                          <b>Libraries: </b>pandas, numpy, scikit-learn, seaborn, matplotlib<br/>
-                          <br/> <br/>
-                        </p>
-
-                        <div className="project--button-row">
-
-                          <a href='https://github.com/vivianaalba/car-recalls-clustering' target='_blank' rel="noreferrer">
-                              <button className='project--links'>See GitHub Repository</button>
-                          </a>
-
-                          <button 
-                            className='project--links'
-                            onClick={() => window.open('/docs/car_recalls_report.pdf', '_blank')}
-                            >
-                              See Report</button>
-                        </div>
-                    </div>
-                </div>
-
-              
-                <div className="card">
-
-                    <img src='/images/projects/covid.svg' alt=''/>
-
-                    <div className='project--description'>
-                        <h2>Disinformation, the COVID-19 pandemic, and Latin America</h2>
-                        <p>
-                          This is the project that started my interest in data science when I was an undergraduate student at the UC Santa Cruz Human Rights Investigations Lab!
-                          This study utilized open source intelligence to track the online spread of COVID-19 messaging from political administrations across Latin America. 
-                          We focused on two specific narratives, collecting data from verified social media accounts using CrowdTangle, Tweetdeck, and targeted keyword searches in English, Spanish, and Portuguese. 
-                          Relevant posts were exported, organized in CSVs, and supplemented with cross-checked references from Google and YouTube transcripts to ensure accuracy.
-                          <br/> <br/>
-                          <b>Tools: </b>Microsoft Excel, TweetDeck, CrowdTangle, TimelineJS<br/>
-                          <br/> <br/>
-                        </p>
-
-                        <div className="project--button-row">
-
-                          <button 
-                            className='project--links'
-                            onClick={() => window.open('/docs/covid_disinformation_report.pdf', '_blank')}
-                            >
-                              See Report</button>
-                        </div>
-                    </div>
-                </div>
-
+          <div className="card">
+            <img src='/images/projects/data_mining.svg' alt=''/>
+            <div className='project--description'>
+              <h2>Large-Scale Data Mining</h2>
+              <p>
+                Scalable data mining algorithms built on Spark RDDs, covering frequent itemset mining (SON + Apriori), graph community detection (Label Propagation and Girvan-Newman), streaming algorithms (Bloom filters, Flajolet-Martin, reservoir sampling), and BFR clustering.
+                <br/> <br/>
+                <b>Tech: </b>Python, Apache Spark<br/>
+                <b>Libraries: </b>numpy, sklearn, graphframes, xgboost<br/>
+                <br/> <br/>
+              </p>
+              <div className="project--button-row">
+                <a href='https://github.com/vivianaalba/data-mining-techniques' target='_blank' rel="noreferrer">
+                  <button className='project--links'>See GitHub Repository</button>
+                </a>
+              </div>
             </div>
-        </section>
+          </div>
 
-        {/* CONTACT ME SECTION */}
-        <section id="contact" className="contact-section">
-            {/* background shapes that relate to Contact */}
-            <div className="contact-shapes">
-                <div className="contact--purple">
-                <img className="contact--purple--img" src="/images/purple.svg" alt="" />
-                </div>
-
-                <div className="contact--blue">
-                <img className="contact--blue--img" src="/images/blue.svg" alt="" />
-                </div>
-
-                <div className="contact--multiple">
-                <img className="contact--multiple--img" src="/images/contact--multiple.svg" alt="" />
-                </div>
+          <div className="card">
+            <img src='/images/projects/recommenders.svg' alt=''/>
+            <div className='project--description'>
+              <h2>Yelp Recommendation Systems</h2>
+              <p>
+                Four recommendation approaches on the Yelp dataset: LSH-based business similarity search, item-based collaborative filtering with Pearson similarity, XGBoost model-based prediction, and a competition-entry Slope One + XGBoost hybrid achieving RMSE 0.9751.
+                <br/> <br/>
+                <b>Tech: </b>Python, Apache Spark<br/>
+                <b>Libraries: </b>xgboost<br/>
+                <br/> <br/>
+              </p>
+              <div className="project--button-row">
+                <a href='https://github.com/vivianaalba/recommendation-systems' target='_blank' rel="noreferrer">
+                  <button className='project--links'>See GitHub Repository</button>
+                </a>
+              </div>
             </div>
+          </div>
 
-            {/* the actual contact card */}
-            <div className="contact--card">
-                <h2>Let's Connect!</h2>
-                <h3>Viviana Alba</h3>
-                <h4>vivianaalba7@gmail.com</h4>
-                <div className="contact--icon-row">
-                    <a href="https://www.linkedin.com/in/vivianaalba/" target="_blank" rel="noopener noreferrer">
-                        <img src="/images/linkedin.svg" alt="LinkedIn Logo" className="contact--logos" />
-                    </a>
-
-                    <a href="https://github.com/vivianaalba" target="_blank" rel="noopener noreferrer">
-                        <img src="/images/github.svg" alt="GitHub Logo" className="contact--logos" />
-                    </a>
-                </div>
+          <div className="card">
+            <img src='/images/projects/college.svg' alt=''/>
+            <div className='project--description'>
+              <h2>College Comparison Analysis</h2>
+              <p>
+                A data-driven analysis of over 6,000 U.S. undergraduate institutions examining how cost, faculty investment, and other factors relate to student outcomes, satisfaction, and institutional rankings.
+                <br/> <br/>
+                <b>Tech: </b>Python<br/>
+                <b>Libraries: </b>pandas, numpy, scipy, statsmodels, scikit-learn, requests, BeautifulSoup4, json, python-dotenv, fuzzywuzzy, matplotlib, seaborn, geopandas<br/>
+                <br/> <br/>
+              </p>
+              <div className="project--button-row">
+                <a href='https://github.com/vivianaalba/college-comparison-project' target='_blank' rel="noreferrer">
+                  <button className='project--links'>See GitHub Repository</button>
+                </a>
+                <button
+                  className='project--links'
+                  onClick={() => window.open('/docs/college_comparison_report.pdf', '_blank')}
+                >
+                  See Report
+                </button>
+              </div>
             </div>
-        </section>
+          </div>
+
+          <div className="card">
+            <img src='/images/projects/trash.svg' alt=''/>
+            <div className='project--description'>
+              <h2>Deep Learning Trash Classifier</h2>
+              <p>
+                A 9-class image classification task using transfer learning to compare the performance of four deep learning architectures (ResNet50, ResNet101, EfficientNetB0, and VGG16) using advanced data augmentation and performance evaluation across training, validation, and test datasets.
+                <br/> <br/>
+                <b>Tech: </b>Python<br/>
+                <b>Libraries: </b>numpy, pandas, matplotlib, seaborn, Pillow, tensorflow, scikit-learn<br/>
+                <br/> <br/>
+              </p>
+              <a href='https://github.com/vivianaalba/ml-trash-sorter' target='_blank' rel="noreferrer">
+                <button className='project--links'>See GitHub Repository</button>
+              </a>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src='/images/projects/data_processing.svg' alt=''/>
+            <div className='project--description'>
+              <h2>Data Processing Dashboard</h2>
+              <p>
+                A web application that parses, filters, projects, groups, aggregates, and joins CSV datasets using custom Python functions with an easy-to-use UI interface.
+                <br/> <br/>
+                <b>Tech: </b>Python<br/>
+                <b>Libraries: </b>Streamlit, regex<br/>
+                <br/> <br/>
+              </p>
+              <div className="project--button-row">
+                <a href='https://github.com/vivianaalba/dsci551-project' target='_blank' rel="noreferrer">
+                  <button className='project--links'>See GitHub Repository</button>
+                </a>
+                <button
+                  className='project--links'
+                  onClick={() => window.open('/docs/data_processing_report.pdf', '_blank')}
+                >
+                  See Report
+                </button>
+                <a href='https://drive.google.com/file/d/1SVuxNNcLUgegxlZSn5dmRNdI5-kEFO3D/view' target='_blank' rel="noreferrer">
+                  <button className='project--links'>See Demo</button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src='/images/projects/car_recalls.svg' alt=''/>
+            <div className='project--description'>
+              <h2>Car Recalls Clustering</h2>
+              <p>
+                Using unsupervised learning, this collaborative group project clusters 60 years of NHTSA recall data to uncover patterns in vehicle safety severity across manufacturers, components, and time.
+                <br/> <br/>
+                <b>Tech: </b>Python<br/>
+                <b>Libraries: </b>pandas, numpy, scikit-learn, seaborn, matplotlib<br/>
+                <br/> <br/>
+              </p>
+              <div className="project--button-row">
+                <a href='https://github.com/vivianaalba/car-recalls-clustering' target='_blank' rel="noreferrer">
+                  <button className='project--links'>See GitHub Repository</button>
+                </a>
+                <button
+                  className='project--links'
+                  onClick={() => window.open('/docs/car_recalls_report.pdf', '_blank')}
+                >
+                  See Report
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* REPORTS SECTION */}
+      <div id="reports" className="projects">
+        <h1 className="projects-title">Reports</h1>
+        <h3>A selection of research and policy reports.</h3>
+      </div>
+
+      <section className="projectContainer">
+        <div className="cardContainer">
+
+          <div className="card">
+            <img src='/images/projects/health_insurance.svg' alt=''/>
+            <div className='project--description'>
+              <h2>Regulating AI in Healthcare Insurance</h2>
+              <p>
+                A policy research paper examining how AI is used in health insurance operations and where existing U.S. privacy regulations (HIPAA, HITECH, and CCPA/CPRA) fall short in protecting patients. Identifies three structural gaps (inference, transparency, and coverage determination) and proposes targeted reforms including inference protections, limits on commercial data use, mandatory explainability and auditing, and strengthened appeal rights.
+                <br/> <br/>
+                <br/> <br/>
+              </p>
+              <div className="project--button-row">
+                <button
+                  className='project--links'
+                  onClick={() => window.open('/docs/health_insurance_and_ai.pdf', '_blank')}
+                >
+                  See Report
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src='/images/projects/covid.svg' alt=''/>
+            <div className='project--description'>
+              <h2>Disinformation, the COVID-19 pandemic, and Latin America</h2>
+              <p>
+                This is the project that started my interest in data science when I was an undergraduate student at the UC Santa Cruz Human Rights Investigations Lab!
+                This study utilized open source intelligence to track the online spread of COVID-19 messaging from political administrations across Latin America. 
+                We focused on two specific narratives, collecting data from verified social media accounts using CrowdTangle, Tweetdeck, and targeted keyword searches in English, Spanish, and Portuguese. 
+                Relevant posts were exported, organized in CSVs, and supplemented with cross-checked references from Google and YouTube transcripts to ensure accuracy.
+                <br/> <br/>
+                <b>Tools: </b>Microsoft Excel, TweetDeck, CrowdTangle, TimelineJS<br/>
+                <br/> <br/>
+              </p>
+              <div className="project--button-row">
+                <button
+                  className='project--links'
+                  onClick={() => window.open('/docs/covid_disinformation_report.pdf', '_blank')}
+                >
+                  See Report
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* CONTACT ME SECTION */}
+      <section id="contact" className="contact-section">
+        {/* background shapes that relate to Contact */}
+        <div className="contact-shapes">
+          <div className="contact--purple">
+            <img className="contact--purple--img" src="/images/purple.svg" alt="" />
+          </div>
+          <div className="contact--blue">
+            <img className="contact--blue--img" src="/images/blue.svg" alt="" />
+          </div>
+          <div className="contact--multiple">
+            <img className="contact--multiple--img" src="/images/contact--multiple.svg" alt="" />
+          </div>
+        </div>
+
+        {/* the actual contact card */}
+        <div className="contact--card">
+          <h2>Let's Connect!</h2>
+          <h3>Viviana Alba</h3>
+          <h4>vivianaalba7@gmail.com</h4>
+          <div className="contact--icon-row">
+            <a href="https://www.linkedin.com/in/vivianaalba/" target="_blank" rel="noopener noreferrer">
+              <img src="/images/linkedin.svg" alt="LinkedIn Logo" className="contact--logos" />
+            </a>
+            <a href="https://github.com/vivianaalba" target="_blank" rel="noopener noreferrer">
+              <img src="/images/github.svg" alt="GitHub Logo" className="contact--logos" />
+            </a>
+          </div>
+        </div>
+      </section>
     </>
 
   )
