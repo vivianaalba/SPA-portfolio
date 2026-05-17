@@ -219,7 +219,7 @@ export default function Home() {
           <div className="card">
             <img src='/images/projects/health_insurance.svg' alt=''/>
             <div className='project--description'>
-              <h2>Regulating AI in Healthcare Insurance</h2>
+              <h2>Regulating AI in Health Insurance</h2>
               <p>
                 A policy research paper examining how AI is used in health insurance operations and where existing U.S. privacy regulations (HIPAA, HITECH, and CCPA/CPRA) fall short in protecting patients. Identifies three structural gaps (inference, transparency, and coverage determination) and proposes targeted reforms including inference protections, limits on commercial data use, mandatory explainability and auditing, and strengthened appeal rights.
                 <br/> <br/>
